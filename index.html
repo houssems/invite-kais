@@ -40,7 +40,7 @@
 					<h1>Phonegap</h1>
 					<h3> au sein du projet eInventaire</h3>
 					<a href="#" class="image">
-						<img width="300" height="255" src="img/bot_phonegap.png">
+						<img width="400" src="img/phonegap-logo.png">
 					</a>
 					<p>
 						<small>Created by <a href="http://matthieuh.fr">Matthieu Hostache</a> / <a href="http://twitter.com/twMatthieuH">@twMatthieuH</a></small>
@@ -159,7 +159,7 @@
 						<h2>Phonegap</h2>
 
 						<a href="#" class="image">
-							<img width="250" height="250" src="img/phonegap-logo.png">
+							<img width="250" height="250" src="img/phonegap-logo2.png">
 						</a>
 						<p>
 							Easily create apps using the web technologies you know and love: <strong>HTML, CSS,</strong> and <strong>JavaScript</strong>
@@ -203,27 +203,85 @@
 					</section>
 					<section data-markdown>
 						<script type="text/template">
-						<h3>Phonegap CLI <a href="https://github.com/phonegap/phonegap-cli" ><img width="30" height="30" style="border: 0; margin-bottom: 10" src="img/link.png"/></a></h3>
-						<p><i>Basé sur Cordova CLI</i></p>
+						## Phonegap CLI <a href="https://github.com/phonegap/phonegap-cli" ><img width="30" height="30" style="border: 0; margin-bottom: 10" src="img/link.png"/></a></h3>
+						<p><i>Basé sur Cordova CLI & NodeJS</i></p>
 						</br>
 						<p>Création d'un projet :</p>
 
 						```
 							$ phonegap create my-app
 							$ cd my-app
-							$ phonegap run android
+							
 						```
-
 
 						<p>Ajout d'un plugin :</p>
 						```
 							$ phonegap local plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-device.git
 						```
 
+						<p>Déploiement :</p>
+						```
+							$ phonegap run android
+						```
 						 </script>
 					</section>
 					<section>
 						<h3>Démo !</h3>
+					</section>
+					<section data-markdown>
+
+						<script type="text/template">
+						## Now just web dev !
+						</br>
+						<ul>
+							<li>
+								Utilisation de <strong>framework JS</strong> :
+								<p>Angular, Backbone, Ember, etc.</p>
+							</li>
+							<li>Personnalisation <strong>CSS</strong>
+								<p>Spécifique à une plateforme avec le dossier <strong>/merge</strong></p>
+							</li>
+							<li>Récupération de données par <strong>API REST</strong></li>
+
+						</ul>
+						<p>Express (NodeJS):</p>
+						```
+							app.get('/wines/:id', function(req, res) {
+							    res.send({id:req.params.id, name: "The Name", description: "description"});
+							});
+						```
+						<p>Slim Framework (PHP):</p>
+						```
+							$app->get('/project/:id',    'getProject');
+						```
+						</script>
+					</section>
+					<section>
+						<h3>Outils Phonegap</h3>
+						<p><img width="290" height="190" src="img/PhoneGap-Build.png"/></p>
+						<ul>
+							<li>Compile vos apps dans le cloud</li>
+							<li>Signer rapidement les applications</li>
+							<li>Gestion / simplication des phases de test</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Retour d'XP : Avantages</h3>
+						<p><img width="75" height="75" src="img/plus.jpg"/></p>
+						<ul>
+							<li>Un code unique</li>
+							<li>Accès à tout les frameworks & librairies WEB</li>
+							<li>Outils Phonegap (by ADOBE)</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Retour d'XP : Inconvènients</h3>
+						<p><img width="75" height="75" src="img/minus.ico"/></p>
+						<ul>
+							<li>Performances : optimisation nécessaire</li>
+							<li>Debug</li>
+							<li>Phonegap ne résoud pas tout</li>
+						</ul>
 					</section>
 				</section>
 
