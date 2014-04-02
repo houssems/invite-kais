@@ -137,3 +137,9 @@ body {
  *********************************************/
 .reveal .slide-number {
   color: darkblue; }
+
+#logo {
+z-index: 10;
+position: absolute;
+right: 50px;
+height: 35px;
